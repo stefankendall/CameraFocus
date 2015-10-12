@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vf1-8a-qxh">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Overlay Controller-->
+        <scene sceneID="LHq-Dh-VfC">
+            <objects>
+                <viewController id="vf1-8a-qxh" customClass="OverlayController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ACh-Pv-mQq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zr8-At-V6Y"/>
+                    </layoutGuides>
+                    <view key="view" alpha="0.5" contentMode="scaleToFill" id="yFB-ka-8sA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="N2f-zo-0Ww">
+                                <rect key="frame" x="0.0" y="384" width="320" height="96"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYS-Ig-Y7n">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+                                        <state key="normal" title="Focus"/>
+                                        <connections>
+                                            <action selector="focusTapped:" destination="vf1-8a-qxh" eventType="touchUpInside" id="Iry-Xq-vSL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="NmQ-St-7ka"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N2f-zo-0Ww" firstAttribute="leading" secondItem="yFB-ka-8sA" secondAttribute="leading" id="gT7-b5-2UY"/>
+                            <constraint firstItem="Zr8-At-V6Y" firstAttribute="top" secondItem="N2f-zo-0Ww" secondAttribute="bottom" id="hxD-lO-91l"/>
+                            <constraint firstAttribute="trailing" secondItem="N2f-zo-0Ww" secondAttribute="trailing" id="nPj-Gg-IWM"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9nV-Ay-fgn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="314" y="331"/>
+        </scene>
+    </scenes>
+</document>
